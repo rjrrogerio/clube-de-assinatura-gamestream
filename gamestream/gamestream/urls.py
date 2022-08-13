@@ -26,5 +26,6 @@ urlpatterns = [
     path('sobre', about, name='about'),
     path('login', login, name='login'),
     path('registrar', register, name='register'),
+    path('planos', subscription , name='subscription')
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

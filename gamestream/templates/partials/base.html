@@ -18,13 +18,13 @@
   <div class="container-menu">
     <img src="/static/assets/image/logo.svg" alt="logotipo da GameStream">
     <nav class="menu-navbar">     
-         <a href="">Home</a>
-         <a href="">Sobre</a>
-         <a href="">Planos</a>
+         <a href="{%  url 'index' %}">Home</a>
+         <a href="{% url 'about' %}">Sobre</a>
+         <a href="{% url 'subscription' %}">Planos</a>
     </nav>
     <nav class="menu-navbar">
-      <a href="">Login</a> 
-      <a href="">Meu carrinho</a> 
+      <a href="{% url 'login' %}">Login</a> 
+      <a href="{% url 'cart' %}">Meu carrinho</a> 
     </nav>
   </div>
  

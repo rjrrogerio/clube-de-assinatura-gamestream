@@ -21,3 +21,7 @@ def login(request):
 def register(request):
     context = {}
     return render(request, 'register.html', context)
+
+def subscription(request):
+    context = {}
+    return render(request, 'subscription.html', context)

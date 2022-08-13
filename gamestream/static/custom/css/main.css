@@ -1,4 +1,42 @@
-body {
-    background-color: lightblue;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  background-color: #333;
+  justify-content: space-around;
+
+}
+
+.menu-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu-navbar ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.menu-navbar a{
+  text-decoration: none;
+  padding: 1em;
+  color: white;
+  width: 100px;
+  height: auto;
+  align-items: center;
+}
+
+.menu-navbar a:hover {
+  background-color: orange;
+}
   

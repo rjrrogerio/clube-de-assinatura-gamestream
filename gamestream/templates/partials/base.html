@@ -15,8 +15,22 @@
 </head>
 
 <body>
+  <div class="container-menu">
+    <img src="/static/assets/image/logo.svg" alt="logotipo da GameStream">
+    <nav class="menu-navbar">     
+         <a href="">Home</a>
+         <a href="">Sobre</a>
+         <a href="">Planos</a>
+    </nav>
+    <nav class="menu-navbar">
+      <a href="">Login</a> 
+      <a href="">Meu carrinho</a> 
+    </nav>
+  </div>
+ 
+
     {% block body %}
-    
+      
       <script src="{% static 'custom/js/main.js' %}"></script>
     {% endblock %} 
 </body>

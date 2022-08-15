@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   height: 60px;
-  background-color: #333;
+  background-color: #17181C;
   justify-content: space-around;
 
 }
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -30,13 +31,13 @@
 .menu-navbar a{
   text-decoration: none;
   padding: 1em;
-  color: white;
+  color: #FFFFFF;
   width: 100px;
   height: auto;
   align-items: center;
 }
 
 .menu-navbar a:hover {
-  background-color: orange;
+  background-color: #FA4753;
 }
-  
+

@@ -10,13 +10,13 @@
   <meta name="author" content="" />
   <title>{% block title %} {% endblock %}</title>
   <!-- Favicon-->
-  <link href="{% static 'custom/css/main.css' %}" rel="stylesheet">
+  <link href="/static/custom/css/main.css" rel="stylesheet">
   
 </head>
 
 <body>
   <div class="container-menu">
-    <img src="/static/assets/image/logo.svg" alt="logotipo da GameStream">
+    <img src="/static/assets/image/logo.svg" alt="logo da GameStream">
     <nav class="menu-navbar">     
          <a href="{%  url 'index' %}">Home</a>
          <a href="{% url 'about' %}">Sobre</a>
@@ -35,6 +35,8 @@
     {% endblock %} 
 </body>
 {% block footer %}
+
+
 {% endblock %}
   
 </html>

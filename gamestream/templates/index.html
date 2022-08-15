@@ -2,14 +2,25 @@
 {% load static %}
 
 
+
 {% block title%} GameStream {% endblock %}
 
 
 {% block body %}
 
 <div class="container">
-    <h1>Bem-vindo a GameStream</h1>
+    <section class="container-section">
+        <div class="container-section-image">
+            <h1>Bem-vindo a GameStream</h1>
+            <img src="/static/assets/image/cube.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita nam culpa perspiciatis, ipsum a facilis rem ex! Magni tempore ad in totam numquam deleniti maiores, labore nobis libero ex?</p>
+            <a href="{% url 'about' %}">Saiba Mais!</a>
+        </div>
+    </section>
 </div>
+
+
+
 
 {% endblock %}
 

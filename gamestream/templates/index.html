@@ -5,6 +5,9 @@
 
 {% block title%} GameStream {% endblock %}
 
+{% block css %}
+<link rel="stylesheet" href="{%static 'custom/css/index.css' %}">
+{% endblock %}
 
 {% block body %}
 
@@ -15,12 +18,29 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita nam culpa perspiciatis, ipsum a facilis rem ex! Magni tempore ad in totam numquam deleniti maiores, labore nobis libero ex?</p>
             <a href="{% url 'about' %}">Saiba mais</a>
         </div>
-        
-        
     </section>
 </div>
+    
 <div class="container-price">
-
+        <h2>Nosso Conteúdo</h2>
+        <div class="section-box">
+            <img src="/static/assets/image/soccer.png" alt="">
+            <h3>Jogos de Esportes</h3>
+            <p class="paragraph-box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ad magni eligendi. </p>
+            <a href="{% url 'subscription' %}">Planos</a>
+        </div>
+        <div class="section-box">
+            <img src="/static/assets/image/games-tiro.png" alt="">
+            <h3>Jogos de Tiro</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ad magni eligendi. </p>
+            <a href="">Planos</a>
+        </div>
+        <div class="section-box">
+            <img src="/static/assets/image/fun.jpg" alt="">
+            <h3>Jogos de Simulação</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus fugit eaque.</p>
+            <a href="">Planos</a>
+        </div>
 </div>
 
 
@@ -28,8 +48,6 @@
 {% endblock %}
 
 
-{% block footer%}
 
-{% endblock %}
 
 

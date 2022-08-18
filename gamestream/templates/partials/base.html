@@ -11,6 +11,7 @@
   <title>{% block title %} {% endblock %}</title>
   <!-- Favicon-->
   <link href="{% static 'custom/css/main.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   {% block css %} {% endblock %}
   
   
@@ -20,13 +21,13 @@
   <div class="container-menu">
     <img src="/static/assets/image/logo.svg" alt="logo da GameStream">
     <nav class="menu-navbar">     
-         <a href="{%  url 'index' %}">Home</a>
-         <a href="{% url 'about' %}">Sobre</a>
-         <a href="{% url 'subscription' %}">Planos</a>
+         <a href="{%  url 'index' %}"><i class="material-icons">home</i></a>
+         <a href="{% url 'about' %}"><i class="material-icons">info</i></a>
+         <a href="{% url 'subscription' %}"><i class="material-icons">payments</i></a>
     </nav>
     <nav class="menu-navbar">
-      <a href="{% url 'login' %}">Login</a> 
-      <a href="{% url 'cart' %}">Meu carrinho</a> 
+      <a href="{% url 'cart' %}"><i class="material-icons">shopping_cart</i></a> 
+      <a href="{% url 'login' %}"><i class="material-icons">login</i></a> 
     </nav>
   </div>
  
@@ -34,7 +35,35 @@
     {% block body %}
       
       <script src="{% static 'custom/js/main.js' %}"></script>
-    {% endblock %} 
+    {% endblock %}
+
+    
+    <footer class="container-footer">
+        <div class="footer-text">
+          <h3>GameStream</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur adipisci qui.</p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contate-nos</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Trabalhe Conosco</h3>
+          <ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nesciunt illum.</p>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Seja Membro</h3>
+          <ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nesciunt illum.</p>
+          </ul>
+        </div>            
+    </footer>
 </body>
 
   

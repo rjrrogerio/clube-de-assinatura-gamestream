@@ -17,26 +17,15 @@
             <img src="/static/assets/image/games-login.svg">
         </div>
         <div class="login">
-            <form action="login.html">
+            <form method="post">
                 <img class="profile-image" src="/static/assets/image/profile-login.svg">
                 <h2>Login GameStream</h2>
                 <div class="input-div one ">
                     <div class="i">
                         <i class="material-icons">person</i>
                     </div>
-                    <div>
-                        <h5>Usuário</h5>
-                        <input class="input" type="text">
-                    </div>
-                </div>
-                <div class="input-div two">
-                    <div class="i">
-                        <i class="material-icons">lock</i>
-                    </div>
-                    <div>
-                        <h5>Senha</h5>
-                        <input class="input" type="password">
-                    </div>
+                    {% csrf_token %}
+                    {{form.as_p}}
                 </div>
                 <a href="#">Esqueceu a senha?</a>
                 <input type="submit" class="btn-login" value="Login">

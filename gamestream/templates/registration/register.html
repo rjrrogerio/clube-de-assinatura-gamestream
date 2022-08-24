@@ -1,0 +1,27 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+
+
+{% block title%} GameStream {% endblock %}
+
+
+{% block body %}
+     
+
+<div class="">
+	<h1>Register</h1>
+	<form method="POST">
+		{% csrf_token %}
+		{{ register_form }}                    
+		<button class="btn btn-primary" type="submit">Registrar</button>
+	</form>
+	<p class="text-center">Caso já possua conta, <a href="/login">login</a> instead.</p>
+</div>
+
+
+{% endblock %}
+
+
+
+
+

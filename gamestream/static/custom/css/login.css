@@ -131,7 +131,7 @@ form h2 {
     transition: .3s;
 }
 
-.input {
+#id_username {
     position: absolute;
     width: 100%;
     height: 100%;

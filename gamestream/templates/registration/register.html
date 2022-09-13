@@ -4,19 +4,51 @@
 
 {% block title%} GameStream {% endblock %}
 
+{% block css %}
+<link rel="stylesheet" href="/static/custom/css/register.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="{% static 'custom/js/showInfo.js' %}"></script>
+{% endblock %}
 
 {% block body %}
      
 
-<div class="">
-	<h1>Register</h1>
-	<form method="POST">
-		{% csrf_token %}
-		{{ register_form }}                    
-		<button class="btn btn-primary" type="submit">Registrar</button>
-	</form>
+<div class="container-register">
+	<div class="form-img">
+		<img src="/static/assets/image/register-img.svg" alt="">
+	</div>
+	<div class="form-content">
+		<form method="POST">
+			<div class="title-header">
+				<div class="title">
+					<h1>Cadastro</h1>
+				</div>
+				<div class="register-button">
+					<button class="btn btn-primary" type="submit">Registrar</button>
+				</div>		
+			</div>
+
+			<div class="form-group">
+				{% csrf_token %}
+				{{ register_form }}
+				<div class="icon-info" onclick="showMessage()" >
+					<i class="material-icons" >info</i>
+				</div>
+				<div class="icon-info2">
+					<i class="material-icons" >info</i>
+				</div>
+				<div class="icon-info3">
+					<i class="material-icons">info</i>
+				</div>
+			</div>
+			
+		</form>
+
 	<p class="text-center">Caso já possua conta, <a href="/login">login</a> instead.</p>
+	</div>
+	
 </div>
+
 
 
 {% endblock %}

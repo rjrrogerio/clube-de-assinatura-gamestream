@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #17181C;
+}
+
+.container-register{
+    margin: 50px 50px;
+    display: flex;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.212);
+}
+
+.form-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D9CEC;
+    padding: 1rem;
+    
+}
+
+.form-img img {
+    width: 15rem;
+}
+
+.form-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.title-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+}
+
+.register-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.form-content h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+span li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    visibility: hidden;
+}
+
+span {
+    visibility: hidden;
+}
+
+#id_username{
+    width: 180px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: -62px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdcde;
+    padding: 5px;
+}
+
+label[for=id_email] {
+    margin-top: -35px;
+    
+}
+
+#id_email {
+    width: 180px;
+    height: 35px;
+    margin-top: -8px;
+    margin-left: -45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdcde;
+    padding: 5px;
+}
+
+label[for=id_password1] {
+    margin-left: -180px;
+    margin-top: 55px;
+    color: #000;
+}
+
+#id_password1 {
+    width: 180px;
+    height: 35px;
+    margin-top: 80px;
+    margin-left: -52px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdcde;
+    padding: 5px;
+}
+
+
+label[for=id_password2]{
+    position: relative;
+    margin-top: -155px;
+    margin-left: 3px;
+}
+
+#id_password2 {
+    width: 180px;
+    height: 35px;
+    margin-top: -120px;
+    margin-left: -188px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdcde;
+    padding: 5px;
+}
+
+.text-center a {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-center {
+    margin-top: -135px;
+}
+
+.icon-info{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 33px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.icon-info2{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 198px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon-info3{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 284px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
-const inputs = document.querySelectorAll('.input');
+const inputs = document.querySelectorAll('.label');
+
 
 function focusFunc(){
     let parent = this.parentNode.parentNode;
@@ -17,3 +18,4 @@ inputs.forEach(input => {
     input.addEventListener('focus', focusFunc);
     input.addEventListener('blur', removeBlurFunc);
 });
+

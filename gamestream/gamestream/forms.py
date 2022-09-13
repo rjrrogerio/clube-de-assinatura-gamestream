@@ -6,7 +6,23 @@ from django.contrib.auth.models import User
 # Create your forms here.
 
 class NewUserForm(UserCreationForm):
-	email = forms.EmailField(required=True)
+	
+	username = forms.CharField(
+        label ='Nome de usuário',
+        widget=forms.TextInput(attrs={'class': 'form-control mb-3'}),)
+
+	email = forms.EmailField(
+		required=True,
+		label ='Email',
+        widget=forms.TextInput(attrs={'placeholder':'Email','class': 'form-control mb-3'}),)
+
+	password1 = forms.CharField(widget=forms.PasswordInput(
+    attrs={'class':'form-control','type':'password', 'name': 'password','placeholder':'Password'}),
+    label='Insira sua senha')
+
+	password2 = forms.CharField(widget=forms.PasswordInput(
+    attrs={'class':'form-control','type':'password', 'name': 'password','placeholder':'Password'}),
+    label='Repita sua senha')			
 
 	class Meta:
 		model = User

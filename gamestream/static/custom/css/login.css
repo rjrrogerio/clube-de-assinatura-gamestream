@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +22,23 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15rem;
     padding: 0 2rem;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
+}
+
+.background-white {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background-white {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .img {
@@ -38,12 +55,12 @@
     width: 100%;
 }
 
-.container-login{
+.login{
     display: flex;
     align-items: center;
     text-align: center;
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 80px
 }
 
 form {
@@ -57,81 +74,22 @@ form h2 {
     color: #17181C;
 }
 
-.input-div{
+p{
     position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #17181C;
+    border-bottom: 1px solid ;
 }
 
-.input-div:after, .input-div:before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background: #17181C;
-    transition: .3s;
+p > label {
+    margin-bottom: 35px;
 }
 
-.input-div:after {
-    right: 50%;
-}
 
-.input-div:after {
-    left: 50%;
-}
 
-.input-div.focus .i i {
-    color: #FA4753;
-}
-
-.input-div.focus:after, .input-div.focus:before {
-    width: 50%;
-}
-
-.input-div.focus div h5{
-    top: -5px;
-    font-size: 15px;
-}
-
-.input-div.one{
-    margin-top: 0px;
-}
-
-.input-div.two{
-    margin-bottom: 4px;
-}
-
-.i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.i i{
-    color: #17181C;
-    transition: .3s;
-}
-
-.input-div > div {
-    position: relative;
-    height: 45px;
-}
-
-.input-div > div h5 {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #000;
-    font-size: 18px;
-    transition: .3s;
-}
-
-#id_username {
+ #id_username  {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -140,12 +98,28 @@ form h2 {
     border: none;
     outline: none;
     background: none;
-    padding: 0.5rem 0.7rem;
+    padding: 0.1rem 0.1rem;
     font-size: 1.2rem;
     font-family: 'DynaPuff', cursive;
     color: #111;
+    margin: 10px;
 }
 
+#id_password {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.2rem;
+    font-family: 'DynaPuff', cursive;
+    color: #111;
+    margin: 10px;
+}
 
 
 .profile-image{
@@ -159,9 +133,10 @@ a{
     color: #333;
     font-size: 0.9rem;
     transition: .3s;
+    margin-bottom: 5px;
 }
 
-a:hover{
+a:hover {
     color: #FA4753;
 }
 
@@ -186,3 +161,4 @@ a:hover{
 .btn-login:hover {
     background-position: right;
 }
+

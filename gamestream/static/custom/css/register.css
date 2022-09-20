@@ -36,21 +36,23 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: #fff;
     padding: 3rem;
 }
 
 .title-header {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between
 }
 
 .register-button {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 .register-button button {
@@ -60,6 +62,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
+    margin-left: 200px;
 }
 
 
@@ -77,82 +80,35 @@ body {
 
 .form-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
 }
 
-
-
-span li {
-    text-decoration: none;
-    list-style: none;
-    margin: 10px;
-    visibility: hidden;
-}
-
-span {
-    visibility: hidden;
-}
 
 #id_username{
-    width: 180px;
-    height: 35px;
-    margin-top: 30px;
-    margin-left: -62px;
     border-radius: 5px;
     border: none;
     background-color: #dcdcde;
     padding: 5px;
 }
 
-label[for=id_email] {
-    margin-top: -35px;
-    
-}
-
-#id_email {
-    width: 180px;
-    height: 35px;
-    margin-top: -8px;
-    margin-left: -45px;
+#id_email{
     border-radius: 5px;
     border: none;
     background-color: #dcdcde;
     padding: 5px;
 }
 
-label[for=id_password1] {
-    margin-left: -180px;
-    margin-top: 55px;
-    color: #000;
+.input-password {
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdcde;
+    padding: 5px;
 }
 
-#id_password1 {
-    width: 180px;
-    height: 35px;
+
+.text-center{
     margin-top: 80px;
-    margin-left: -52px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dcdcde;
-    padding: 5px;
-}
-
-
-label[for=id_password2]{
-    position: relative;
-    margin-top: -155px;
-    margin-left: 3px;
-}
-
-#id_password2 {
-    width: 180px;
-    height: 35px;
-    margin-top: -120px;
-    margin-left: -188px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dcdcde;
-    padding: 5px;
 }
 
 .text-center a {
@@ -165,34 +121,81 @@ label[for=id_password2]{
     color: #fff;
 }
 
-.text-center {
-    margin-top: -135px;
+span li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    
 }
 
-.icon-info{
+span {
+    visibility: visible;
+}
+
+.container-icon{
     position: absolute;
-    margin-left: 185px;
-    margin-top: 33px;
-    padding: 5px;
-    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 110px;
+    
 }
 
-
-.icon-info2{
+.container-icon2{
     position: absolute;
-    margin-left: 185px;
-    margin-top: 198px;
-    padding: 5px;
-    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 215px;
 }
 
-.icon-info3{
+.container-icon3{
     position: absolute;
-    margin-left: 185px;
-    margin-top: 284px;
-    padding: 5px;
-    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 275px;
 }
+
+.message-info{
+    width: 300px;
+    min-height: 10px;
+    margin: 8px;
+    padding: 3px;
+    font-size: 0.8rem;
+    border: 1px solid #000;
+    border-radius: 0px 10px 10px 10px;
+    text-align: center;
+    
+}
+
+#icon {
+    background: none;
+    border: none;
+    background-color: none;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 90px;
+}
+
+#icon2 {
+    background: none;
+    border: none;
+    background-color: none;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 200px;
+}
+
+#icon3 {
+    background: none;
+    border: none;
+    background-color: none;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 260px;
+}
+
+.hide{
+    display: none;
+}
+
+
+
 
 
 

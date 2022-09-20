@@ -7,7 +7,7 @@
 {% block css %}
 <link rel="stylesheet" href="/static/custom/css/register.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<script src="{% static 'custom/js/showInfo.js' %}"></script>
+
 {% endblock %}
 
 {% block body %}
@@ -29,28 +29,41 @@
 			</div>
 
 			<div class="form-group">
-				{% csrf_token %}
-				{{ register_form }}
-				<div class="icon-info" onclick="showMessage()" >
-					<i class="material-icons" >info</i>
-				</div>
-				<div class="icon-info2">
-					<i class="material-icons" >info</i>
-				</div>
-				<div class="icon-info3">
-					<i class="material-icons">info</i>
-				</div>
+					{% csrf_token %}
+					{{ register_form }}
 			</div>
-			
 		</form>
 
-	<p class="text-center">Caso já possua conta, <a href="/login">login</a> instead.</p>
+		<div class="container-icon" id="container">
+			<p class="message-info">O usuário deve conter até 150 caracteres.  <br> Não deve conter caracteres especiais: <br> #/$/%/*/!</p>
+		</div>
+			<button id="icon">
+				<i class="material-icons">info</i>
+			</button>
+		
+		<div class="container-icon2" id="container2">
+			<p class="message-info">A senha deve conter até 8 caracteres.</p>
+		</div>
+		<button id="icon2">
+			<i class="material-icons">info</i>
+		</button>
+
+		<div class="container-icon3" id="container3">
+			<p class="message-info">A senha deve ser a mesma.</p>
+		</div>
+		<button id="icon3">
+			<i class="material-icons">info</i>
+		</button>
+
+
+
+	<p class="text-center">Caso já possua conta, <a href="/login">login</a> aqui.</p>
 	</div>
 	
 </div>
 
 
-
+<script src="{% static 'custom/js/showInfo.js' %}"></script>
 {% endblock %}
 
 

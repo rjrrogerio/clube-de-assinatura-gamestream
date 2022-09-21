@@ -32,10 +32,12 @@
     </nav>
     <nav class="menu-navbar">
         {% if user.is_authenticated %}
-            {{user.username}}
-            <a href="{% url 'login' %}"><i class="material-icons">logout</i></a>
+          {{user.username}}
+          <a href="{% url 'logout' %}"><i class="material-icons">logout</i></a>
+          <a href="{% url 'password_reset' %}">Resetar Senha<i class="material-icons">password</i></a>
+
         {% else %}
-          <a href="{% url 'logout' %}"><i class="material-icons">login</i></a>
+          <a href="{% url 'login' %}"><i class="material-icons">login</i></a>
         {% endif %}
     </nav>
   </div>

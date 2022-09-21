@@ -1,5 +1,5 @@
 from django.shortcuts import  render, redirect
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib import messages
 from .forms import NewUserForm 
 
@@ -31,3 +31,7 @@ def register(request):
 def subscription(request):
     context = {}
     return render(request, 'subscription.html', context)
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
